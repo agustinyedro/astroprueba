@@ -1,0 +1,8 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const pageTitle = "Índice de etiquetas";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  {tags.map((tag) => <li>{tag}</li>)}
+</BaseLayout>
